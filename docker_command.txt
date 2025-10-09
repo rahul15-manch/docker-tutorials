@@ -1,0 +1,21 @@
+| Command                                | Description                                     | Example                                   |
+| -------------------------------------- | ----------------------------------------------- | ----------------------------------------- |
+| `docker --help`                        | Show help / list top-level commands             | `docker --help`                           |
+| `docker version`                       | Show Docker client & server version             | `docker version`                          |
+| `docker info`                          | Display system-wide information about Docker    | `docker info`                             |
+| `docker pull`                          | Pull (download) an image from a registry        | `docker pull nginx`                       |
+| `docker images` (or `docker image ls`) | List images on your machine                     | `docker images`                           |
+| `docker build`                         | Build an image from a Dockerfile                | `docker build -t my-app .`                |
+| `docker run`                           | Create & run a container from an image          | `docker run my-app`                       |
+| `docker run -d`                        | Run container in detached (background) mode     | `docker run -d my-app`                    |
+| `docker run -p host:container`         | Map ports from host to container                | `docker run -p 8080:80 my-app`            |
+| `docker run -it`                       | Run container interactively (with a TTY)        | `docker run -it ubuntu bash`              |
+| `docker ps`                            | List running containers                         | `docker ps`                               |
+| `docker ps -a`                         | List all containers, including stopped          | `docker ps -a`                            |
+| `docker stop`                          | Stop a running container                        | `docker stop <container_name_or_ID>`      |
+| `docker rm`                            | Remove a container                              | `docker rm <container_name_or_ID>`        |
+| `docker rmi`                           | Remove an image                                 | `docker rmi <image_name_or_ID>`           |
+| `docker exec`                          | Run a command in a running container            | `docker exec -it <container> /bin/sh`     |
+| `docker logs`                          | Fetch logs of a container                       | `docker logs <container_name_or_ID>`      |
+| `docker commit`                        | Create a new image from a container’s state     | `docker commit <container> new-image:tag` |
+| `docker inspect`                       | Show detailed info on container or image (JSON) | `docker inspect <container_or_image>`     |
